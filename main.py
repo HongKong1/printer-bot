@@ -23,7 +23,6 @@ def handle_text(message):
 Фото на обычной бумаге - 4 грн
 Ч\б офто - 3 грн""")
 
-
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
     if message.text == "кто печатает?" or message.text == "кто может напечатать?" :
@@ -57,10 +56,4 @@ def handle_text(message):
     elif message.text == "Кто-то разрешал добавлять бота?" :
         bot.send_message(message.chat.id, "Меня - да")
 
-
-
-
-
-
 bot.polling(none_stop=True, interval=0)
-
